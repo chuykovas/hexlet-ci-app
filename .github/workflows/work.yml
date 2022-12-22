@@ -5,8 +5,9 @@ jobs:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      # Устанавливаем Node.js
+      - uses: actions/setup-node@v1
       with:
         node-version: '16.x'
         cache: npm
